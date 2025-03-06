@@ -1,0 +1,317 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	background: white;
+	color: black;
+}
+
+/* Main Menu */
+
+#main-menu {
+	background-image: url(123.png);
+}
+
+#main-menu ul {
+	padding: 0.5em 0;
+	text-align: center;
+}
+
+#main-menu li {
+	list-style: none;
+	padding: 0.1em 0.5em;
+}
+
+#main-menu a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 0.25em 1em;
+	text-transform: uppercase;
+	border-radius: 3px;
+	font-weight: bold;
+	transition: all 1s ease;
+
+}
+
+#main-menu a:hover {
+	background-color: white;
+	color: black;
+}
+
+
+/* Page Header */
+
+#page-header {
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	font-size: 2em;
+	line-height: 1.5em;
+}
+
+#page-header .banner-title {
+	background: rgba(255,255,255,0.5);
+}
+
+#page-header #logo {
+	padding-top: 5%;
+}
+
+#page-header #logo img {
+	max-width: 500px;
+}
+
+
+#page-header p {
+	padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+#page-header .cta-button {
+	text-align: center;
+	padding: 10% 0;
+}
+
+#page-header .cta-button a {
+	display: inline-block;
+	background-color: darkblue;
+	color: white;
+	text-decoration: none;
+	padding: 0.5em 1em;
+	border-radius: 10px;
+	box-shadow: inset rgba(0,0,255,0.5) 0 2px 1px, inset rgba(0,0,0,0.3) 0 -2px 1px;
+}
+
+#page-header .cta-button a:hover {
+	color: black;
+	background-color: white;
+	box-shadow: none;
+}
+
+body.page-overview #page-header {
+	background-image: url(abc.jpg);
+}
+
+body.page-about-us #page-header {
+	background-image: url(images/background-about-us.jpg);
+}
+
+/* Main Content */
+
+#main-content,
+#features,
+#testimonials {
+	padding: 1.5em;
+	overflow: hidden;
+}
+
+#features > h2,
+#testimonials > h2 {
+	font-size: 3em;
+	line-height: 1em;
+	font-weight: 300;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+#main-content {
+	background: #eee;
+}
+
+#main-content h2 {
+	font-size: 2em;
+	line-height: 1em;
+	font-weight: 300;
+	margin-bottom: 0.5em;
+	padding-top: 0.5em;
+}
+
+#main-content p {
+	margin-bottom: 1.5em;
+	font-size: 1.25em;
+	line-height: 1.5em;
+}
+
+.read-more {
+	width: 150%;
+	padding-top: 0.5em;
+}
+
+.read-more a {
+	float: right;
+	color: white;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+.read-more a:after {
+	content: ">";
+	margin-left: 0.5em;
+}
+
+/* RACES */
+
+#features {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    background: rgb(110, 51, 7);
+    color: #eee;
+}
+
+#features article {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: auto 100px;
+	padding-bottom: 0.5em;
+	padding-top: 120px !important;
+}
+
+#features article h3 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+#features article.features-Mortals {
+	background-image: url(hum.png);
+}
+
+#features article.features-Gods {
+	background-image: url(gods.png);
+}
+#features article.features-Variation {
+    background-image: url(var.jpg);
+}
+
+/* Testimonials */
+
+#testimonials {
+	background: black;
+	color: white;
+}
+
+#Testimonials .cta-button {
+	text-align: center;
+	padding: 10% 0;
+}
+
+#Testimonials .cta-button a {
+	display: inline-block;
+	background-color: darkblue;
+	color: white;
+	text-decoration: none;
+	padding: 0.5em 1em;
+	border-radius: 10px;
+	box-shadow: inset rgba(0,0,255,0.5) 0 2px 1px, inset rgba(0,0,0,0.3) 0 -2px 1px;
+}
+
+#Testimonials .cta-button a:hover {
+	color: black;
+	background-color: white;
+	box-shadow: none;
+}
+
+/* Page Footer */
+
+#page-footer {
+	padding: 1.5em;
+	text-transform: uppercase;
+}
+
+#secondary-menu li {
+	list-style: none;
+}
+
+#secondary-menu a {
+	color: #999;
+}
+
+@media only screen and (min-width: 900px) {
+
+	body {
+		font-size: 16px;
+		line-height: 1.5em;
+	}
+
+	/* Main Menu */
+
+	#main-menu ul {
+		display: flex;
+		justify-content: center;
+		padding: 0;
+		text-align: left;
+	}
+
+	#main-menu li {
+		padding: 0.75em 0.5em;
+	}
+
+	/* Page Header */
+
+	#page-header {
+		min-height: 80vh;
+	}
+
+	#page-header h1 {
+		font-size: 4em;
+	}
+
+	/* Main Content */
+
+	#main-content,
+	#features,
+	#testimonials {
+		padding: 3em;
+	}
+
+	/* Features */
+
+	#features article {
+		width: 30%;
+		padding: 2em 5em;
+	}
+
+	/* Testimonials */
+
+	#testimonials article {
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: nowrap;
+		text-align: left;
+	}
+
+	#testimonials article figure {
+		width: 20%;
+		padding: 0;
+		padding-right: 3em;
+	}
+
+	#testimonials .quote {
+		width: 80%;
+	}
+
+	/* Page Footer */
+
+	#page-footer {
+		padding: 1.5em 3em;
+	}
+
+	#secondary-menu ul {
+		display: flex;
+	}
+
+	#secondary-menu li {
+		padding: 0;
+		padding-right: 1.5em;
+	}
+
+}
