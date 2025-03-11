@@ -7,20 +7,22 @@ body {
 	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.5em;
-	background: white;
+	background: rgb(110, 51, 7);
 	color: black;
+	
 }
 
 /* Main Menu */
 
 #main-menu {
-	background-image: url(123.png);
+	background-image: url(images/123.png);
 }
 
 #main-menu ul {
 	padding: 0.5em 0;
 	text-align: center;
 }
+
 
 #main-menu li {
 	list-style: none;
@@ -43,6 +45,23 @@ body {
 	background-color: white;
 	color: black;
 }
+.read-more {
+	width: 100%;
+	padding-top: 1em;
+}
+
+.read-more a {
+	float: right;
+	color: whitesmoke;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+.read-more a:after {
+	content: ">";
+	margin-left: 0.5em;
+}	
 
 
 /* Page Header */
@@ -94,68 +113,14 @@ body {
 }
 
 body.page-overview #page-header {
-	background-image: url(abc.jpg);
+	background-image: url(images/abc.jpg);
 }
 
 body.page-about-us #page-header {
 	background-image: url(images/background-about-us.jpg);
 }
 
-/* Main Content */
 
-#main-content,
-#features,
-#testimonials {
-	padding: 1.5em;
-	overflow: hidden;
-}
-
-#features > h2,
-#testimonials > h2 {
-	font-size: 3em;
-	line-height: 1em;
-	font-weight: 300;
-	width: 100%;
-	margin-bottom: 1em;
-}
-
-#main-content {
-	background: #eee;
-}
-
-#main-content h2 {
-	font-size: 2em;
-	line-height: 1em;
-	font-weight: 300;
-	margin-bottom: 0.5em;
-	padding-top: 0.5em;
-}
-
-#main-content p {
-	margin-bottom: 1.5em;
-	font-size: 1.25em;
-	line-height: 1.5em;
-}
-
-.read-more {
-	width: 150%;
-	padding-top: 0.5em;
-}
-
-.read-more a {
-	float: right;
-	color: white;
-	font-weight: bold;
-	font-size: 1.2em;
-	text-decoration: none;
-}
-
-.read-more a:after {
-	content: ">";
-	margin-left: 0.5em;
-}
-
-/* RACES */
 
 #features {
 	display: flex;
@@ -175,36 +140,76 @@ body.page-about-us #page-header {
 }
 
 #features article h3 {
-	font-size: 1.5em;
+	font-size: 2.5em;
+	line-height: 1em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+#features article p {
+	font-size: 1.8em;
 	line-height: 1em;
 	margin-bottom: 1em;
 	text-align: center;
 }
 
-#features article.features-Mortals {
-	background-image: url(hum.png);
+#features article.features-Mortals {/*the style in community and index are same so i use both and not rewrite it again*/
+	background-image: url(images/hum.png);
 }
 
 #features article.features-Gods {
-	background-image: url(gods.png);
+	background-image: url(images/gods.png);
 }
 #features article.features-Variation {
-    background-image: url(var.jpg);
+    background-image: url(images/var.jpg);
+}
+.features-instergram {
+	display: block;
+	text-align: center;
+	
 }
 
-/* Testimonials */
+.features-instergram img{
+	width: 80px;
+	height: 80px;
+	border: 3px solid black;
+}
+.features-facebook {
+	display: block;
+	text-align: center ;
+	
+}
 
-#testimonials {
+.features-facebook img{
+	width: 80px;
+	height: 80px;
+	border: 3px solid black;
+}
+
+.features-twitter {
+	display: block;
+	text-align: center;
+	
+}
+
+.features-twitter img{
+	width: 80px;
+	height: 80px;
+	border: 3px solid black;
+}
+
+/* bottombuttom */
+
+#bottombutton {
 	background: black;
-	color: white;
+	
 }
 
-#Testimonials .cta-button {
+#bottombutton .cta-button {
 	text-align: center;
 	padding: 10% 0;
 }
 
-#Testimonials .cta-button a {
+#bottombutton .cta-button a {
 	display: inline-block;
 	background-color: darkblue;
 	color: white;
@@ -214,13 +219,13 @@ body.page-about-us #page-header {
 	box-shadow: inset rgba(0,0,255,0.5) 0 2px 1px, inset rgba(0,0,0,0.3) 0 -2px 1px;
 }
 
-#Testimonials .cta-button a:hover {
+#bottombutton .cta-button a:hover {
 	color: black;
 	background-color: white;
 	box-shadow: none;
 }
 
-/* Page Footer */
+/* PageFooter */
 
 #page-footer {
 	padding: 1.5em;
@@ -234,7 +239,7 @@ body.page-about-us #page-header {
 #secondary-menu a {
 	color: #999;
 }
-
+/*The @media rule is used in media queries to apply different styles for different media types/devices.*/
 @media only screen and (min-width: 900px) {
 
 	body {
@@ -273,36 +278,20 @@ body.page-about-us #page-header {
 		padding: 3em;
 	}
 
-	/* Features */
+	
 
 	#features article {
 		width: 30%;
 		padding: 2em 5em;
 	}
 
-	/* Testimonials */
-
-	#testimonials article {
-		justify-content: flex-start;
-		align-items: center;
-		flex-wrap: nowrap;
-		text-align: left;
-	}
-
-	#testimonials article figure {
-		width: 20%;
-		padding: 0;
-		padding-right: 3em;
-	}
-
-	#testimonials .quote {
-		width: 80%;
-	}
 
 	/* Page Footer */
 
 	#page-footer {
 		padding: 1.5em 3em;
+		background: black;
+		color: #eee;
 	}
 
 	#secondary-menu ul {
@@ -315,3 +304,56 @@ body.page-about-us #page-header {
 	}
 
 }
+/*this is error msg window*/
+.popup {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	height: 60px;
+	transform: translate(-50%, -50%);
+	background-color: lightblue;
+	padding: 20px;
+	border: 1px solid black;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	font-size: 1.3em;
+  }
+  #closeButton {
+	position: absolute;
+	bottom: 10px; 
+	right: 10px; 
+	background-color: blanchedalmond;
+	width: 48px;
+  }
+/* cardlibrary*/
+#cardlibrary {
+	display: flex;
+	justify-content: center;
+	background: rgb(110, 51, 7);
+	color: #eee;
+	padding: 20px 0;
+  }
+  
+  .card-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	max-width: 1200px;
+	width: 100%;
+	padding: 0 20px;
+  }
+  
+  .card {
+	background-color: black;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+  }
+  
+  .card img {
+	width: 100%;
+	height: auto;
+	display: block;
+  }
+
+  
